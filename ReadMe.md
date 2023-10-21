@@ -33,6 +33,18 @@ Open new terminal (terminal 5)
 $ bin/kafka-console-consumer.sh --topic {topic-name} --from-beginning --bootstrap-server localhost:9092
 ```
 
+## Others:
+### To get list of all the topics:
+```shell
+$ bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+```
+
+### To delete a topic:
+```shell
+$ bin/kafka-topics.sh --delete --topic {topic-name} --bootstrap-server localhost:9092
+```
+
+
 ## Configurations:
 **Producer Configurations:**
 * spring.kafka.producer.bootstrap-servers= localhost:9092
