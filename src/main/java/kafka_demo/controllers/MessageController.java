@@ -8,19 +8,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@RequestMapping("/kafka")
+//@RestController
+//@RequestMapping("/kafka")
 public class MessageController {
-    private final KafkaProducerService kafkaProducerService;
+//    private final KafkaProducerService kafkaProducerService;
 
-    public MessageController(KafkaProducerService kafkaProducerService) {
-        this.kafkaProducerService = kafkaProducerService;
-    }
-
-    @GetMapping("/publish")
-    public ResponseEntity<String> publishMessage(@RequestParam(name = "message") String message){
-        kafkaProducerService.sendMessage(message);
-        return new ResponseEntity<>("Message Sent (coming from controller) ", HttpStatus.OK);
-    }
+//    public MessageController(KafkaProducerService kafkaProducerService) {
+//        this.kafkaProducerService = kafkaProducerService;
+//    }
+//
+//    @GetMapping("/publish")
+//    public ResponseEntity<String> publishMessage(@RequestParam(name = "message") String message){
+//        kafkaProducerService.sendMessage(message);
+//        return new ResponseEntity<>("Message Sent (coming from controller) ", HttpStatus.OK);
+//    }
 
 }

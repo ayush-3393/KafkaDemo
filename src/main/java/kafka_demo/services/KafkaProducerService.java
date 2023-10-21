@@ -6,20 +6,20 @@ import org.slf4j.LoggerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class KafkaProducerService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaProducerService.class);
-    private final KafkaTemplate<String, String> kafkaTemplate;
+//    private final KafkaTemplate<String, String> kafkaTemplate;
 
-    public KafkaProducerService(KafkaTemplate<String, String> kafkaTemplate) {
-        this.kafkaTemplate = kafkaTemplate;
-    }
+//    public KafkaProducerService(KafkaTemplate<String, String> kafkaTemplate) {
+//        this.kafkaTemplate = kafkaTemplate;
+//    }
 
-    public void sendMessage(String message){
-        String loggerInfo = "Message sent : " + message;
-        LOGGER.info(loggerInfo);
-        kafkaTemplate.send(AppConstants.KAFKA_TEST_TOPIC_NAME, message);
-    }
+//    public void sendMessage(String message){
+//        String loggerInfo = "Message sent : " + message;
+//        LOGGER.info(loggerInfo);
+//        kafkaTemplate.send(AppConstants.KAFKA_TEST_TOPIC_NAME, message);
+//    }
 
 }
