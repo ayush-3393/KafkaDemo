@@ -1,4 +1,5 @@
 # Steps:
+###### Note: Open all the terminals with root folder (where kafka is installed ) as the address.
 ## Step 1: Start Zookeeper Server
 1. Open terminal (terminal 1).
 2. Run command:
