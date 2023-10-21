@@ -30,7 +30,7 @@ $ bin/kafka-console-producer.sh --topic {topic-name} --bootstrap-server localhos
 ### Reading events on consumer side:
 Open new terminal (terminal 5)
 ```shell
-$ bin/kafka-console-producer.sh --topic {topic-name} --bootstrap-server localhost:9092
+$ bin/kafka-console-consumer.sh --topic {topic-name} --from-beginning --bootstrap-server localhost:9092
 ```
 
 ## Configurations:
