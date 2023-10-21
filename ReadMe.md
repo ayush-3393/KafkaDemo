@@ -32,3 +32,16 @@ Open new terminal (terminal 5)
 ```shell
 $ bin/kafka-console-producer.sh --topic {topic-name} --bootstrap-server localhost:9092
 ```
+
+## Configurations:
+**Producer Configurations:**
+* spring.kafka.producer.bootstrap-servers= localhost:9092
+* spring.kafka.producer.key-serializer= org.apache.kafka.common.serialization.StringSerializer
+* spring.kafka.producer.value-serializer= org.apache.kafka.common.serialization.StringSerializer
+
+**Consumer Configurations:**
+* spring.kafka.consumer.bootstrap-servers= localhost:9092
+* spring.kafka.consumer.group-id= {group-name}
+* spring.kafka.consumer.auto-offset-reset= earliest
+* spring.kafka.consumer.key-deserializer= org.apache.kafka.common.serialization.StringDeserializer
+* spring.kafka.consumer.value-deserializer= org.apache.kafka.common.serialization.StringDeserializer
